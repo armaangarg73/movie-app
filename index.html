@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body>
+
+    <div class="header text-center">
+
+        <div class="flex justify-center">
+            <img src="net.png" alt="" class="logo mb-3">
+        </div>
+
+        <h2 class="text-neutral-300 text-3xl w-[700px] font-bold mb-2">Search Unlimited movies, TV shows and more</h2>
+        <p class="text-neutral-400 mb-2 text-lg">Ready to watch?Enter the movie name to see if it's a good choice</p>
+        <div class="flex mt-3 text-white">
+            <input type="text" class="py-4 px-3" placeholder="Search a movie..." id="movieName">
+            <button class="btn" onclick="search()">Search movie</button>
+        </div>
+    </div>
+
+    <div id="container" class="w-[700px] mt-16 mx-auto">
+
+        <div class="flex text-neutral-50 gap-2">
+            <div >
+                <h1 id="title" class="text-2xl font-bold">The Avengers</h1> 
+                <p id="desc" class="text-xl text-neutral-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, officiis. Fugiat quae saepe voluptatem iure expedita.</p>
+                <p class="my-2">Actors: <span id="actor" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Directors: <span id="direct" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Awards: <span id="award" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Genre: <span id="gen" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Box office collection: <span id="collection" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Languages: <span id="ln" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">IMDB Rating: <span id="rating" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Country: <span id="cont" class="text-neutral-200">Kumar Ashish</span></p>
+                <p class="my-2">Time: <span id="tm" class="text-neutral-200">Kumar Ashish</span></p>
+                
+               
+            </div>
+            <div class="banner" id="banner">
+                 <img id="poster" class="rounded-xl" src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt=""> 
+                <div class="suggestion px-[10px] py-[3px]">Worth watching</div>
+
+                </div>
+               
+        </div>
+    </div>
+
+    <h1 id="error" class="text-3xl text-neutral-300 font-bold text-center my-36"></h1>
+    
+    <script src="script.js"></script>
+</body>
+</html>
